@@ -19,14 +19,8 @@ def eval_metrics(actual, pred):
     return rmse, mae, r2
 
 
-
-if __name__ == "__main__":
-    warnings.filterwarnings("ignore")
-    np.random.seed(40)
-
-    # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)
-    wine_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data/wine-quality.csv")
-    data = pd.read_csv(wine_path)
+def load_data(data_path):
+    data = pd.read_csv(data_path)
 
     # Split the data into training and test sets. (0.75, 0.25) split.
     train, test = train_test_split(data)
@@ -36,6 +30,16 @@ if __name__ == "__main__":
     test_x = test.drop(["quality"], axis=1)
     train_y = train[["quality"]]
     test_y = test[["quality"]]
+    return train_x, train_y, test_x, test_y
+
+
+if __name__ == "__main__":
+    warnings.filterwarnings("ignore")
+    np.random.seed(40)
+
+    # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)
+    data_path = "data/wine-quality.csv"
+    train_x, train_y, test_x, test_y = load_data(data_path)
 
     alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
     l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
