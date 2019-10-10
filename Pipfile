@@ -12,9 +12,9 @@ scikit-learn = "*"
 mlflow = {extras = ["extra"],version = "*"}
 jupyter = "*"
 pipfile = "*"
-keras = "*"
-tensorflow = "*"
 psycopg2 = "*"
+# keras = "*"
+# tensorflow = "*"
 
 [requires]
 python_version = "3.6"
