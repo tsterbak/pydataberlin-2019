@@ -5,6 +5,7 @@ This Repository contains the resources for my tutorial **"Managing the end-to-en
 # Basic setup
 
 ## Setup the environment
+- clone this repository
 - install pipenv: `pip install pipenv`
 - run `pipenv install` in the directory of the Pipfile
 - activate the environment by `pipenv shell`
