@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/bharath.kancharla/Desktop/pydataberlin-2019/mlruns/0/e56f09070db14e8ea20ec19e23b85136/artifacts
+end_time: 1618968697934
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: e56f09070db14e8ea20ec19e23b85136
+run_uuid: e56f09070db14e8ea20ec19e23b85136
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1618968697637
+status: 3
+tags: []
+user_id: bharath

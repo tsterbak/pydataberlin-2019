@@ -1,0 +1,4 @@
+artifact_location: file:///mnt/c/Users/bharath.kancharla/Desktop/pydataberlin-2019/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: ElasticNet_wine
